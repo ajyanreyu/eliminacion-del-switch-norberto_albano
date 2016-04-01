@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'lodash@^4.0.0.' ]
+2 info using npm@3.7.3
+3 info using node@v5.8.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData lodash@^4.0.0.
+8 silly fetchNamedPackageData lodash
+9 silly mapToRegistry name lodash
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/lodash
+13 verbose request uri https://registry.npmjs.org/lodash
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 08:49:25
+16 verbose request id c57e1e2f8cb90210
+17 verbose etag "2NSZZ3YPA8CBWSP7D1M745E86"
+18 http request GET https://registry.npmjs.org/lodash
+19 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+20 info attempt registry request try #2 at 08:49:46
+21 verbose etag "2NSZZ3YPA8CBWSP7D1M745E86"
+22 http request GET https://registry.npmjs.org/lodash
+23 http 304 https://registry.npmjs.org/lodash
+24 verbose headers { date: 'Fri, 01 Apr 2016 07:49:47 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"2NSZZ3YPA8CBWSP7D1M745E86"',
+24 verbose headers   age: '206',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-fra1221-FRA',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '31',
+24 verbose headers   'x-timer': 'S1459496987.670542,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Fri, 01 Apr 2016 07:49:47 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"2NSZZ3YPA8CBWSP7D1M745E86"',
+25 silly get     age: '206',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-fra1221-FRA',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '31',
+25 silly get     'x-timer': 'S1459496987.670542,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/lodash from cache
+27 verbose get saving lodash to /home/ajyanreyu/.npm/registry.npmjs.org/lodash/.cache.json
+28 verbose correctMkdir /home/ajyanreyu/.npm correctMkdir not in flight; initializing
+29 silly fetchPackageMetaData Error: No compatible version found: lodash@^4.0.0.
+29 silly fetchPackageMetaData Valid install targets:
+29 silly fetchPackageMetaData 4.7.0, 4.6.1, 4.6.0, 4.5.1, 4.5.0, 4.4.0, 4.3.0, 4.2.1, 4.2.0, 4.1.0, 4.0.1, 4.0.0, 3.10.1, 3.10.0, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.0, 3.7.0, 3.6.0, 3.5.0, 3.4.0, 3.3.1, 3.3.0, 3.2.0, 3.1.0, 3.0.1, 3.0.0, 2.4.2, 2.4.1, 2.4.0, 2.3.0, 2.2.1, 2.2.0, 2.1.0, 2.0.0, 1.3.1, 1.3.0, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 1.0.0-rc.3, 1.0.0-rc.2, 1.0.0-rc.1, 0.10.0, 0.9.2, 0.9.1, 0.9.0, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.5.0-rc.1, 0.4.2, 0.4.1, 0.4.0, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.2.0, 0.1.0
+29 silly fetchPackageMetaData
+29 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+29 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+29 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+29 silly fetchPackageMetaData     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+29 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+29 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+29 silly fetchPackageMetaData  error for lodash@^4.0.0. [Error: No compatible version found: lodash@^4.0.0.
+29 silly fetchPackageMetaData Valid install targets:
+29 silly fetchPackageMetaData 4.7.0, 4.6.1, 4.6.0, 4.5.1, 4.5.0, 4.4.0, 4.3.0, 4.2.1, 4.2.0, 4.1.0, 4.0.1, 4.0.0, 3.10.1, 3.10.0, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.0, 3.7.0, 3.6.0, 3.5.0, 3.4.0, 3.3.1, 3.3.0, 3.2.0, 3.1.0, 3.0.1, 3.0.0, 2.4.2, 2.4.1, 2.4.0, 2.3.0, 2.2.1, 2.2.0, 2.1.0, 2.0.0, 1.3.1, 1.3.0, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 1.0.0-rc.3, 1.0.0-rc.2, 1.0.0-rc.1, 0.10.0, 0.9.2, 0.9.1, 0.9.0, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.5.0-rc.1, 0.4.2, 0.4.1, 0.4.0, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.2.0, 0.1.0
+29 silly fetchPackageMetaData ]
+30 silly rollbackFailedOptional Starting
+31 silly rollbackFailedOptional Finishing
+32 silly runTopLevelLifecycles Starting
+33 silly runTopLevelLifecycles Finishing
+34 silly install printInstalled
+35 verbose stack Error: No compatible version found: lodash@^4.0.0.
+35 verbose stack Valid install targets:
+35 verbose stack 4.7.0, 4.6.1, 4.6.0, 4.5.1, 4.5.0, 4.4.0, 4.3.0, 4.2.1, 4.2.0, 4.1.0, 4.0.1, 4.0.0, 3.10.1, 3.10.0, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.0, 3.7.0, 3.6.0, 3.5.0, 3.4.0, 3.3.1, 3.3.0, 3.2.0, 3.1.0, 3.0.1, 3.0.0, 2.4.2, 2.4.1, 2.4.0, 2.3.0, 2.2.1, 2.2.0, 2.1.0, 2.0.0, 1.3.1, 1.3.0, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 1.0.0-rc.3, 1.0.0-rc.2, 1.0.0-rc.1, 0.10.0, 0.9.2, 0.9.1, 0.9.0, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.5.0-rc.1, 0.4.2, 0.4.1, 0.4.0, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.2.0, 0.1.0
+35 verbose stack
+35 verbose stack     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+35 verbose stack     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+35 verbose stack     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+35 verbose stack     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+35 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+35 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+36 verbose cwd /home/ajyanreyu/Documentos/PL/eliminacion-del-switch-norberto_albano
+37 error Linux 3.19.0-56-generic
+38 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "lodash@^4.0.0."
+39 error node v5.8.0
+40 error npm  v3.7.3
+41 error No compatible version found: lodash@^4.0.0.
+41 error Valid install targets:
+41 error 4.7.0, 4.6.1, 4.6.0, 4.5.1, 4.5.0, 4.4.0, 4.3.0, 4.2.1, 4.2.0, 4.1.0, 4.0.1, 4.0.0, 3.10.1, 3.10.0, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.0, 3.7.0, 3.6.0, 3.5.0, 3.4.0, 3.3.1, 3.3.0, 3.2.0, 3.1.0, 3.0.1, 3.0.0, 2.4.2, 2.4.1, 2.4.0, 2.3.0, 2.2.1, 2.2.0, 2.1.0, 2.0.0, 1.3.1, 1.3.0, 1.2.1, 1.2.0, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 1.0.0-rc.3, 1.0.0-rc.2, 1.0.0-rc.1, 0.10.0, 0.9.2, 0.9.1, 0.9.0, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.5.0-rc.1, 0.4.2, 0.4.1, 0.4.0, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.2.0, 0.1.0
+42 error If you need help, you may report this error at:
+42 error     <https://github.com/npm/npm/issues>
+43 verbose exit [ 1, true ]
